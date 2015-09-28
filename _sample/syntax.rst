@@ -1,7 +1,7 @@
 とあるセクション
 ================
 
-.. code-block:: rosmsg
+.. code-block:: rostype
 
    # Single scan from a planar laser range-finder
    #
