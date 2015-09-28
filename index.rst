@@ -211,6 +211,12 @@ sphinxcontrib-ros
 出力
 ----
 
+.. raw:: html
+
+    <div>
+      <iframe style="height:520px" src="sample/syntax.html" frameborder="0"></iframe>
+    </div>
+
 (1)パッケージ概要
 ------------------
 
