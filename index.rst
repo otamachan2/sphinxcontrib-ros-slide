@@ -93,28 +93,34 @@ by otamachan
 NAOqi(Pepper)
 -------------
 
+* http://doc.aldebaran.com/2-1/index.html
+
 .. raw:: html
 
     <div>
-      <iframe style="height:520px" src="http://doc.aldebaran.com/2-1/naoqi/index.html" frameborder="0"></iframe>
+      <iframe style="height:500px" src="http://doc.aldebaran.com/2-1/index.html" frameborder="0"></iframe>
     </div>
 
 fetch robotics
 ---------------
 
+* http://docs.fetchrobotics.com/
+
 .. raw:: html
 
     <div>
-      <iframe style="height:520px" src="http://docs.fetchrobotics.com/" frameborder="0"></iframe>
+      <iframe style="height:500px" src="http://docs.fetchrobotics.com/" frameborder="0"></iframe>
     </div>
 
 Choreonoid
 -----------
 
+* http://choreonoid.org/en/
+
 .. raw:: html
 
     <div>
-      <iframe style="height:520px" src="http://choreonoid.org/en/" frameborder="0"></iframe>
+      <iframe style="height:500px" src="http://choreonoid.org/en/" frameborder="0"></iframe>
     </div>
 
 ROSのドキュメントといえばROS wiki
