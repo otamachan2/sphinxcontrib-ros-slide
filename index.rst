@@ -67,7 +67,11 @@ by otamachan
 こんな風にかっこよく出力してくれる
 ----------------------------------
 
-.. image:: _static/sample.png
+.. raw:: html
+
+    <div>
+      <iframe style="height:520px" src="sample/sample.html" frameborder="0"></iframe>
+    </div>
 
 良い点(個人的な感想)
 ---------------------
@@ -89,66 +93,65 @@ by otamachan
 NAOqi(Pepper)
 -------------
 
-.. image:: _static/NAOqi.png
+.. raw:: html
+
+    <div>
+      <iframe style="height:520px" src="http://doc.aldebaran.com/2-1/naoqi/index.html" frameborder="0"></iframe>
+    </div>
 
 fetch robotics
 ---------------
 
-.. image:: _static/fetch.png
+.. raw:: html
+
+    <div>
+      <iframe style="height:520px" src="http://docs.fetchrobotics.com/" frameborder="0"></iframe>
+    </div>
 
 Choreonoid
 -----------
 
-.. image:: _static/Choreonoid.png
+.. raw:: html
+
+    <div>
+      <iframe style="height:520px" src="http://choreonoid.org/en/" frameborder="0"></iframe>
+    </div>
 
 ROSのドキュメントといえばROS wiki
 ---------------------------------
 
-.. image:: _static/roswiki.png
+.. raw:: html
 
-こんな感じに書くと
+    <div>
+      <iframe style="height:520px" src="http://wiki.ros.org/Documentation" frameborder="0"></iframe>
+    </div>
+
+Wiki拡張で書けて
 ------------------
 
-.. rst-class:: small
+.. raw:: html
 
-.. code-block:: text
-
-   <<PackageHeader(amcl)>>
-
-   {{{
-   #!clearsilver CS/NodeAPI
-   node.0 {
-     name=amcl
-     desc=`amcl` takes in a laser-based map, laser scans, and transform messages, and outputs pose estimates. On startup, `amcl` initializes its particle filter according to the parameters provided.  Note that, because of the defaults, if no parameters are set, the initial filter state will be a moderately sized particle cloud centered about (0,0,0).
-     sub{
-       0.name= scan
-       0.type= sensor_msgs/LaserScan
-       0.desc= Laser scans.
-       1.name= tf
-       1.type= tf/tfMessage
-       1.desc= Transforms.
-       2.name= initialpose
-       2.type= geometry_msgs/PoseWithCovarianceStamped
-       2.desc= Mean and covariance with which to (re-)initialize the particle filter.
-       3.name= map
-       3.type= nav_msgs/OccupancyGrid
-       3.desc= When the `use_map_topic` parameter is set, AMCL subscribes to this topic to retrieve the map used for laser-based localization. '''New in navigation 1.4.2.'''
-     }
+    <div>
+      <iframe style="height:520px" src="http://wiki.ros.org/amcl?action=raw" frameborder="0"></iframe>
+    </div>
 
 パッケージ
 -----------
 
-.. image:: _static/roswiki_package.png
+.. raw:: html
 
-API(Pub/Sub/パラメータ)
-------------------------
+    <div>
+      <iframe style="height:520px" src="http://wiki.ros.org/amcl#line-2" frameborder="0"></iframe>
+    </div>
 
-.. image:: _static/roswiki_api.png
+API(Pub/Sub/パラメータ/型)
+--------------------------
 
-メッセージ
-----------
+.. raw:: html
 
-.. image:: _static/roswiki_message.png
+    <div>
+      <iframe style="height:520px" src="http://wiki.ros.org/amcl#line-23" frameborder="0"></iframe>
+    </div>
 
 かっこいい
 -----------
@@ -303,5 +306,6 @@ Indigoの
 * ちなみにこのスライドもSphinxで記載しています
 
   * 拡張: `hieroglyph <https://github.com/nyergler/hieroglyph>`_
-  * スライド: `GtiHub <http://www.google.com>`_
-  * スライドソース: `GtiHub <http://www.google.com>`_
+  * Source: `github.com <https://github.com/otamachan2/sphinxcontrib-ros-slide/blob/master/index.rst>`_
+  * Build: `travis-ci.com <https://travis-ci.org/otamachan2/sphinxcontrib-ros-slide/>`_
+  * Slide: `gitbub.io <http://otamachan2.github.io/sphinxcontrib-ros-slide/>`_
