@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-extensions = []
+extensions = ['sphinxcontrib.ros']
 templates_path = ['_templates']
 source_suffix = '.rst'
 master_doc = 'index'
