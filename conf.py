@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-extensions = ['hieroglyph']
+extensions = ['hieroglyph', 'sphinxcontrib.ros']
 slide_theme = 'single-level'
 slide_theme_options = {'custom_css': 'custom.css'}
 slide_numbers = True

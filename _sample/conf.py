@@ -12,4 +12,4 @@ language = 'ja'
 exclude_patterns = ['_build']
 pygments_style = 'sphinx'
 html_theme = 'classic'
-html_static_path = ['_static']
+html_static_path = []

@@ -5,4 +5,3 @@ all:
 
 clean:
 	rm -rf _build *~
-	$(MAKE) -C _sample clean

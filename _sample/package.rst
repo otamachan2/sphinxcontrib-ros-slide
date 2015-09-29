@@ -1,10 +1,13 @@
-とあるセクション
+すごいパッケージ
 ================
 
 パッケージ概要
 --------------
 
-.. ros:package:: my_greate_package
+.. ros:package:: my_great_package
+
+   :version: 0.1.0
+   :author: Great Person
 
    これはスゴイパッケージです。
 
@@ -13,5 +16,5 @@
 他のセクション
 --------------
 
-実装は、 :ros:pakacge:`my_great_package` を参考にしています。
+実装は、 :ros:pkg:`my_great_package` を参考にしています。
 

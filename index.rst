@@ -200,13 +200,14 @@ sphinxcontrib-ros
       # パッケージパスを指定
       ros_package_path = ['../src']
 
-(2)シンタックスハイライト
+(1)シンタックスハイライト
 -------------------------
 
 .. rst-class:: small
 
 .. literalinclude:: _sample/syntax.rst
    :language: rst
+   :lines: 1-30
 
 出力
 ----
@@ -217,7 +218,7 @@ sphinxcontrib-ros
       <iframe style="height:520px" src="sample/syntax.html" frameborder="0"></iframe>
     </div>
 
-(1)パッケージ概要
+(2)パッケージ概要
 ------------------
 
 .. literalinclude:: _sample/package.rst
@@ -226,26 +227,78 @@ sphinxcontrib-ros
 出力
 ----
 
+.. raw:: html
 
-オプションとか
----------------
+    <div>
+      <iframe style="height:520px" src="sample/package.html" frameborder="0"></iframe>
+    </div>
 
+めんどくさい
+------------
+
+package.xml
+------------
+
+.. literalinclude:: _sample/package.xml
+   :language: xml
+
+autopackage
+------------
+
+.. literalinclude:: _sample/autopackage.rst
+   :language: rst
+
+出力
+----
+
+.. raw:: html
+
+    <div>
+      <iframe style="height:520px" src="sample/autopackage.html" frameborder="0"></iframe>
+    </div>
 
 (2)メッセージ定義
 -----------------
 
-出力
-----
-
-(2)メッセージ定義(ファイル指定)
--------------------------------
+.. literalinclude:: _sample/message.rst
+   :language: rst
 
 出力
 ----
+
+.. raw:: html
+
+    <div>
+      <iframe style="height:520px" src="sample/message.html" frameborder="0"></iframe>
+    </div>
+
+めんどくさい
+------------
+
+GrateAutoMessage.msg
+---------------------
+
+.. literalinclude:: _sample/msg/GreatAutoMessage.msg
+   :language: rostype
+   :lines: 1-30
+
+automessage
+------------
+
+.. literalinclude:: _sample/automessage.rst
+   :language: rst
+
+出力
+----
+
+.. raw:: html
+
+    <div>
+      <iframe style="height:520px" src="sample/automessage.html" frameborder="0"></iframe>
+    </div>
 
 オプションとか
 ---------------
-
 
 (3)インターフェース定義
 ------------------------
@@ -276,8 +329,8 @@ Indigoの
 
 * 一から全部メッセージ定義しないといけないの？
 
-大丈夫
--------
+否
+--
 
 * そんな時の `sphinx.ext.intersphinx <http://sphinx-doc.org/latest/ext/intersphinx.html>`_ !
 

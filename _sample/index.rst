@@ -7,3 +7,8 @@ Welcome to sample's documentation!
    sample
    syntax
    package
+   autopackage
+   message
+   automessage
+
+:ref:`genindex`
