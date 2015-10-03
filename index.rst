@@ -373,7 +373,7 @@ Indigo/Jadeの
 ----------
 
 * ちゃんとsphinxcontrib-rosの **ドキュメント書く**
-* テストをコミットする
+* テスト真面目に書く
 * ``:ros:wiki:`package``` Roleの追加
 
 ありがとうございました
