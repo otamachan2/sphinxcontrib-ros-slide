@@ -14,7 +14,7 @@ install:
   - pip install git+https://github.com/otamachan2/sphinxcontrib-ros.git
 script:
   - make
-after_sucess:
+after_success:
   - cd _build/slides
   - git init
   - git config user.name "Travis CI"
