@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-extensions = ['sphinxcontrib.ros']
+extensions = ['sphinxcontrib.ros', 'sphinx.ext.intersphinx']
 templates_path = ['_templates']
 source_suffix = '.rst'
 master_doc = 'index'
@@ -13,3 +13,5 @@ exclude_patterns = ['_build']
 pygments_style = 'sphinx'
 html_theme = 'classic'
 html_static_path = []
+intersphinx_mapping = {'ros':
+  ('http://otamachan2.github.io/sphinxros/indigo/', None)}

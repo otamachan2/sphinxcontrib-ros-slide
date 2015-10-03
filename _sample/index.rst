@@ -10,5 +10,6 @@ Welcome to sample's documentation!
    autopackage
    message
    automessage
+   intersphinx
 
 :ref:`genindex`

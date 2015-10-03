@@ -8,9 +8,9 @@ by otamachan
 自己紹介
 --------
 
+* Name: Tamaki Nishino
 * ID: otamachan (Twitter: otamasan)
-* 愛知県在住サラリーマン
-* 3児のお父さん
+* 愛知県在住サラリーマンで3児のお父さん
 * ROSは今年の1月から使い始めました
 * 勉強会発表初めて枠
 
@@ -44,8 +44,8 @@ by otamachan
 #. sphinxcontrib-rosの紹介
 #. まとめ
 
-というわけでまずはSphinxの紹介
-----------------------------------
+まずはSphinxの紹介
+------------------
 
 `Sphinx <http://sphinx-users.jp/>`_ とは
   * Pythonで書かれたドキュメンテーションツール
@@ -141,22 +141,13 @@ Wiki拡張で書けて
       <iframe style="height:520px" src="http://wiki.ros.org/amcl?action=raw" frameborder="0"></iframe>
     </div>
 
-パッケージ
------------
+パッケージやAPIを出力してくれる
+-------------------------------
 
 .. raw:: html
 
     <div>
       <iframe style="height:520px" src="http://wiki.ros.org/amcl#line-2" frameborder="0"></iframe>
-    </div>
-
-API(Pub/Sub/パラメータ/型)
---------------------------
-
-.. raw:: html
-
-    <div>
-      <iframe style="height:520px" src="http://wiki.ros.org/amcl#line-23" frameborder="0"></iframe>
     </div>
 
 かっこいい
@@ -198,7 +189,7 @@ sphinxcontrib-ros
       # 拡張の追加
       extenstions += ['sphinxcontrib.ros']
       # パッケージパスを指定
-      ros_package_path = ['../src']
+      ros_base_path = ['../src']
 
 (1)シンタックスハイライト
 -------------------------
@@ -275,7 +266,7 @@ autopackage
 めんどくさい
 ------------
 
-GrateAutoMessage.msg
+GreatAutoMessage.msg
 ---------------------
 
 .. literalinclude:: _sample/msg/GreatAutoMessage.msg
@@ -312,45 +303,56 @@ automessage
 サンプル
 ---------
 
-Indigoの
+Indigo/Jadeの
 
-* 全パッケージ
-* 全メッセージ(2015/09現在)
+* 全パッケージ(1858/664)
+* 全メッセージ
 
-を出力してみました。
-
-* TravisCI + Docker (Ubuntu14.04/Indigo !!)
+を出力してみました。(TravisCI/Ubuntu14.04)
 
 出力
 ----
 
+.. raw:: html
+
+    <div>
+      <iframe style="height:520px" src="http://otamachan2.github.io/sphinxros/indigo/" frameborder="0"></iframe>
+    </div>
+
 自プロジェクトで使う時
 ----------------------
 
-* 一から全部メッセージ定義しないといけないの？
+* 下から全部メッセージ定義していくのめんどくさい
 
-否
---
+大丈夫
+------
 
-* そんな時の `sphinx.ext.intersphinx <http://sphinx-doc.org/latest/ext/intersphinx.html>`_ !
+* そんな時の `sphinx.ext.intersphinx <http://sphinx-doc.org/latest/ext/intersphinx.html>`_
 
   ``conf.py`` に
 
   .. code-block:: python
 
      extensions += ['sphinx.ext.intersphinx']
-     intersphinx_mapping = {'ros': ('https://docs.python.org/3.4', None)}
+     intersphinx_mapping = {'ros':
+       ('http://otamachan2.github.io/sphinxros/indigo/', None)}
 
   って書いておけば
 
-  .. code-block:: rst
+適当に参照しても
+----------------
 
-     .. ros:message:: my_greate_package/NewMessage
+.. literalinclude:: _sample/intersphinx.rst
+   :language: rst
 
-  だけで
+出力
+----
 
-参照できちゃう
----------------
+.. raw:: html
+
+    <div>
+      <iframe style="height:520px" src="sample/intersphinx.html" frameborder="0"></iframe>
+    </div>
 
 まとめ
 -------
@@ -361,10 +363,18 @@ Indigoの
   .. code-block:: python
 
      extensions += ['sphinxconrib.ros', 'sphinx.ext.intersphinx']
-     ros_package_path = ['../src']
-     intersphinx_mapping = {'ros': ('https://docs.python.org/3.4', None)}
+     ros_base_path = ['../src']
+     intersphinx_mapping = {'ros':
+       ('http://otamachan2.github.io/sphinxros/indigo/', None)}
 
 * かっこよくROSのドキュメントが書けちゃうかも
+
+今後のTODO
+----------
+
+* ちゃんとsphinxcontrib-rosの **ドキュメント書く**
+* テストをコミットする
+* ``:ros:wiki:`package``` Roleの追加
 
 ありがとうございました
 ----------------------
